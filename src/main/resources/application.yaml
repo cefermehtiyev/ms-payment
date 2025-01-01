@@ -1,0 +1,17 @@
+server:
+  port: 1007
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:2003/payments_db
+    username: postgres
+    password: j@vacefer2005
+  jpa:
+    open-in-view: false
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yaml
+
+client:
+  urls:
+    ms-order: http://localhost:1005
+
